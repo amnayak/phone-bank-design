@@ -2,7 +2,7 @@
 <!-- NOTE: the string 'TODO' appears everywhere you need to fill in information. -->
 <html>
 <head>
-<title>TODO:Title For Your Game</title>
+<title>Training for a Job at the Orbital Phone Bank</title>
 <!-- NOTE: this CSS sets up the ".figure" class to center images, and instructs images in ".figure"s to have space around them and to render crisp pixel edges when scaled [e.g. for retina displays]. -->
 <style>
 body {
@@ -50,26 +50,50 @@ p {
 </style>
 </head>
 <body>
-<h1>TODO: Title For Your Game</h1>
-<div id="author">by: TODO Your Name (TODO your andrewid)</div>
-<p>TODO: one-sentence summary of your game, highlighting the unique "hook" of the game.</p>
+<h1>Training for a Job at the Orbital Phone Bank</h1>
+<div id="author">by: Amukta Nayak (apnayak)</div>
+<p>The intergalactic orbital phone bank is hiring a new astronaut-- your dream job. Train your memory and spatial skills before your big interview.</p>
 <!-- the <div> wrapping this image centers it on the page. -->
-<!-- TODO: drawing showing the main view of the game during play -->
-<div class="figure">
-<img src="game.png" />
-</div>
-<p>TODO: more information (2-3 sentences) about gameplay, referring to the image above.</p>
+<p>This game is a prequel to <a href="http://graphics.cs.cmu.edu/courses/15-466-f18/game1-designs/default/">Another Infinite Night at the Orbital Phone Bank</a>. You play an up-and-coming young astronaut who wants to train their memory skills for a job at the Orbital Phone Bank. Carefully remember the sequence of colored lights and activate them in the right order.</p>
 
 <h2>Gameplay</h2>
-<p>TODO: Describe how the game starts, plays (e.g. what are the controls), and ends.</p>
-<!-- TODO: illustrate your descriptions with more drawings -->
+<p>On the main platform, there's a control panel with 4 colored lights (the "main lights"). Scattered around the station are 4 corresponding colored light poles. When the player interacts with the control panel/main lights, they blink one by one in a random sequence. The player must then walk around and interact with the correct light poles in the same order. The sequence starts with 1 light, and increases by 1 everytime the player is correct.</p>
+
 <div class="figure">
-<img src="before-reset.png" />
-<img src="after-reset.png" />
+<img src="main_platform_colors.jpg"style="width:400px;height:300px;" />
+</div>
+<p> Say for example, the player interacts with the control panel, and it indicated the red light: </p>
+<div class="figure">
+<img src="main_platform_red1.jpg"style="width:400px;height:300px;" />
 </div>
 
-<h2>Assets</h2>
-<p>TODO: Provide a link to any preliminary 3D models, sounds, or <a href="https://github.com/ixchow/amoeba-escape/blob/master/tiles.png">textures</a> for the game. Make sure to only link to assets with appropriate licenses.</p>
+<p> The player should then go interact with the red light pole. </p>
+<div class="figure">
+<img src="main_platform_red2.jpg"style="width:400px;height:300px;" />
+</div>
+<p> Once the player succesfully does this, and interacts with the control panel again, they see that the same sequence has increased by 1. The panel blinks red, then green. </p>
+<div class="figure">
+<img src="main_platform_red1.jpg"style="width:400px;height:300px;" />
+</div>
+<div class="figure">
+<img src="main_platform_green1.jpg"style="width:400px;height:300px;" />
+</div>
+<p> So the player interacts with the red light pole: </p>
+<div class="figure">
+<img src="main_platform_red2.jpg"style="width:400px;height:300px;" />
+</div>
+<p> And then the green light pole: </p>
+<div class="figure">
+<img src="main_platform_green2.jpg"style="width:400px;height:300px;" />
+</div>
+<p> The sequence increases everytime by one. The game ends when the player interacts with the wrong light pole (aka messes up the sequence). There is no set "win condition," the player must try to get as many rounds right by trying to remember the longest sequence possible.</p>
 
+<h2> Controls </h2>
+<p> SPACE to interact with the control panels and lights, WASD + mouse to move and look around. </p>
+
+<h2>Assets</h2>
+<p>You want your training to be as close as possible to the actual job, so use the same assets as <a href="http://graphics.cs.cmu.edu/courses/15-466-f18/game1-designs/default/">Another Infinite Night at the Oribital Phone Bank</a>.</p>
+
+<p></p>
 </body>
 </html>
